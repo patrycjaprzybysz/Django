@@ -1,4 +1,6 @@
-### 1. w pierwszym kroku utworzyłam nowy folder roboczy i aktywowałam wirtualne srodowisko
+## Instrukcja instalacji i uruchomienia Django Blog w oparciu o tutorial https://tutorial.djangogirls.org/pl/
+
+#### 1. Tworzenie nowego środowiska wirtualnego
 
 ``` 
 C:\Users\patip\django> python -m venv env.patrycja.przybysz
@@ -6,32 +8,36 @@ C:\Users\patip\django> python -m venv env.patrycja.przybysz
 
 ![image](https://github.com/patrycjaprzybysz/ISI/assets/100605325/615958dd-adc5-4624-8ee1-b26ce920346f)
 
-
+#### 2. aktywacja środowiska
 ```
 C:\Users\patip\django> env.patrycja.przybysz\Scripts\activate
 ```
 
-### 3. sprawdziłam czy mam najnowsza wersje pip aby zainstalowac django
+#### 3. Aktualizacja pip
 
 ```
 python -m pip install --upgrade pip
 ```
-### 4. w folderze django utworzylam requirements.txt i dodałam do niego taki tekst:
+#### 4. Instalacja wymaganych bibliotek
 
+Utwórz plik requirements.txt w folderze Django i dodaj do niego następującą zawartość:
 ```
 Django~=3.2.10
 ```
-to pozwoliło po wykonaniu komendy pip install -r requirements.txt zainstalowac Django
+Następnie wykonaj polecenie:
+```
+ pip install -r requirements.txt zainstalowac Django
+```
 
-### 5. nastpenie utworzyłam nowy projket 
+#### 5. Tworzenie nowego projektu Django 
 ![image](https://github.com/patrycjaprzybysz/ISI/assets/100605325/673a2063-216f-4412-8eac-b5ac87da4cff)
 
 ```
 django-admin.exe startproject mysite .
 ```
-i zmodyfikowałam ustawienia takie jak time_zone, language, allowed_host, static
+Następnie dostosuj ustawienia projektu, takie jak strefa czasowa, język, dozwolone hosty i ustawienia statyczne.
 
-### 6. utworzyłam bazę danych i uruchomiłam serwer
+#### 6. Migracja bazy danych i uruchomienie serwera
 ```
 python manage.py migrate
 ```
@@ -41,7 +47,7 @@ python manage.py runserver
 ```
 ![image](https://github.com/patrycjaprzybysz/ISI/assets/100605325/ee108c87-023f-4dd1-a2d1-35c9165f6884)
 
-### 7. Stworzyłam bloga
+#### 7. Tworzenie aplikacji bloga
 
 ```
 python manage.py startapp blog
@@ -50,17 +56,22 @@ python manage.py startapp blog
 
 Po ustwieniach utworzyłam model wpisu (post) oraz tabele dla modeli w bazie danych
 
-### 8. w pliku blog/admin.py dodałam model post z poprzedniego kroku i utworzyłam admina wprowadzajac login mail i haslo
+#### 8. Dodawanie modelu do panelu administracyjnego
+
+Edytuj plik blog/admin.py, aby dodać model post. Następnie utwórz konto administratora, podając adres e-mail i hasło.
+
 ![image](https://github.com/patrycjaprzybysz/ISI/assets/100605325/63db2355-597f-4e43-81a0-75bd57676e25)
 
 ![image](https://github.com/patrycjaprzybysz/ISI/assets/100605325/f9aa0a53-43b5-4ee9-b80b-a0d9779398a5)
 
 
-#### dodałam posty na bloga
+#### 9. Dodawanie wpisów na bloga
 ![image](https://github.com/patrycjaprzybysz/ISI/assets/100605325/07811e00-9902-42be-9fe8-f666446e82ff)
 
 
-### 9. Wdrożyłam aplikacje na pythonanyware 
+#### 10.Wdrożenie aplikacji na PythonAnywhere
+
+Wdrożenie aplikacji na PythonAnywhere
 https://patrycjaprzybysz.pythonanywhere.com/
 
    
