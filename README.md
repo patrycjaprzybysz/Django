@@ -146,7 +146,7 @@ def post_edit(request, pk):
 {% endblock %}
 ```
 
-*blog/templates/blog/base.html
+* blog/templates/blog/base.html
 
 ```
 {% load static %}
@@ -209,3 +209,7 @@ def post_edit(request, pk):
     {% endfor %}
 {% endblock %}
 ```
+
+#### 13. Django ORM (QuerySet)
+
+#### 14. Utworzenie pliku ze stylami CSS
