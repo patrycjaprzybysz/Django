@@ -56,7 +56,7 @@ Po ustwieniach utworzyłam model wpisu (post) oraz tabele dla modeli w bazie dan
 ![image](https://github.com/patrycjaprzybysz/ISI/assets/100605325/f9aa0a53-43b5-4ee9-b80b-a0d9779398a5)
 
 
-dodałam posty na bloga
+#### dodałam posty na bloga
 ![image](https://github.com/patrycjaprzybysz/ISI/assets/100605325/07811e00-9902-42be-9fe8-f666446e82ff)
 
 
